@@ -1,33 +1,42 @@
-name: Generate Snake 🐍 Gamer Edition
+name: Generate Snake 🐍 Neon Gamer
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # Corre todos los días a las 03:00 UTC
-  workflow_dispatch:     # Permite ejecutarlo manualmente
+    - cron: "0 */6 * * *"  # Corre cada 6 horas
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repositorio
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generar snake personalizado
-        uses: Platane/snk@v3
+      - name: Generate custom snake
+        uses: Platane/snk@master
+        id: snake-gif
         with:
           github_user_name: Michael383883
-          outputs: |
-            dist/github-contribution-grid-snake.svg
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
           color_snake: gradient
-          color_snake_gradient: '#00FF00,#00CED1,#1E90FF,#7B68EE,#C71585' # Verde, turquesa, azul, violeta, magenta (efecto gamer RGB)
-          color_background: '#000000' # Fondo negro total
-          hide_progress_bar: true     # Sin barra de progreso
-          gif: false                  # SVG (más fluido y nativo para GitHub)
+          color_snake_gradient: |
+            #FF0000,#FF7F00,#FFFF00,#00FF00,
+            #0000FF,#4B0082,#9400D3,#FF1493,
+            #00FFFF,#7CFC00
+          color_dots: '#333333'  # Color de la cuadrícula (gris oscuro)
+          color_border: '#000000'  # Borde negro
+          color_background: '#000000'  # Fondo negro
+          hide_progress_bar: true  # Oculta la barra de progreso
 
-      - name: Publicar en rama output
+      - name: Show status
+        run: git status
+
+      - name: Push to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
+          force_orphan: true
