@@ -7,9 +7,8 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=3000&center=true&width=450&lines=Welcome+to+my+Github+Page!;I'm+Null3000.;I'm+a+student+in+California.;I'm+always+expanding+my+tech+stack!)](https://git.io/typing-svg)
 
 
-## My Tech Stack and Tools
-## 🐍 Snake de contribuciones2,0
 
+## My Tech Stack and git 
 ![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg)
 
 
