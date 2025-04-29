@@ -21,6 +21,11 @@
 ![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg)
 
 
+## 🐍 Snake RGB Gamer Style
+
+![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg?v=3)
+
+
 
 ### Programming Languages
 
