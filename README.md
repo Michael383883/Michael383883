@@ -7,31 +7,11 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=3000&center=true&width=450&lines=Welcome+to+my+Github+Page!;I'm+Null3000.;I'm+a+student+in+California.;I'm+always+expanding+my+tech+stack!)](https://git.io/typing-svg)
 
 
-## Contribution Snake 
-![snake gif](https://github.com/null3000/null3000/blob/output/github-contribution-grid-snake.svg)
-
 ## My Tech Stack and Tools
 ## 🐍 Snake de contribuciones2,0
 
 ![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg)
 
-
-## 🐍 Snake de contribuciones
-
-![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg)
-
-
-## 🐍 Snake RGB Gamer Style
-
-![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg?v=3)
-
-##ser
-
-![Snake animation](https://raw.githubusercontent.com/Michael383883/Michael383883/output/dist/snake.svg)
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/dist/snake.svg" width="100%">
-</p>
 
 ### Programming Languages
 
