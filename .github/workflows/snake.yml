@@ -2,8 +2,8 @@ name: Generate Snake 🐍 Gamer Edition
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Corre diariamente
-  workflow_dispatch:
+    - cron: "0 3 * * *"  # Corre todos los días a las 03:00 UTC
+  workflow_dispatch:     # Permite ejecutarlo manualmente
 
 jobs:
   generate:
@@ -13,19 +13,19 @@ jobs:
       - name: Checkout repositorio
         uses: actions/checkout@v3
 
-      - name: Generar Snake personalizado
+      - name: Generar snake personalizado
         uses: Platane/snk@v3
         with:
           github_user_name: Michael383883
           outputs: |
             dist/github-contribution-grid-snake.svg
-          # Personalización visual
-          color_snake: 'gradient'
-          color_snake_gradient: 'green,gray,blue'
-          color_background: '#000000'   # Fondo negro
-          hide_progress_bar: true       # Oculta la barra inferior
+          color_snake: gradient
+          color_snake_gradient: '#00FF00,#00CED1,#1E90FF,#7B68EE,#C71585' # Verde, turquesa, azul, violeta, magenta (efecto gamer RGB)
+          color_background: '#000000' # Fondo negro total
+          hide_progress_bar: true     # Sin barra de progreso
+          gif: false                  # SVG (más fluido y nativo para GitHub)
 
-      - name: Subir al branch `output`
+      - name: Publicar en rama output
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
