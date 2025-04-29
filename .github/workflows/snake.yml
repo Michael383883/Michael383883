@@ -1,39 +1,29 @@
-name: Generate Snake 🐍 Neon Gamer
+name: Snake Animation
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Corre cada 6 horas
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Generate custom snake
+      - name: Generate Snake
         uses: Platane/snk@master
-        id: snake-gif
         with:
           github_user_name: Michael383883
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          gif_out_path: dist/snake.gif
+          svg_out_path: dist/snake.svg
           color_snake: gradient
-          color_snake_gradient: |
-            #FF0000,#FF7F00,#FFFF00,#00FF00,
-            #0000FF,#4B0082,#9400D3,#FF1493,
-            #00FFFF,#7CFC00
-          color_dots: '#333333'  # Color de la cuadrícula (gris oscuro)
-          color_border: '#000000'  # Borde negro
-          color_background: '#000000'  # Fondo negro
-          hide_progress_bar: true  # Oculta la barra de progreso
+          color_snake_gradient: "#FF0000,#00FF00,#0000FF,#FF00FF"
+          color_dots: "#333333"
+          color_background: "#000000"
+          hide_progress_bar: true
 
-      - name: Show status
-        run: git status
-
-      - name: Push to output branch
+      - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
