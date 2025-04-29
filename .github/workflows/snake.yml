@@ -2,27 +2,27 @@ name: Generate Snake 🐍
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Cada 12 horas
-  workflow_dispatch:
+    - cron: "0 0 * * *"  # Ejecuta todos los días a medianoche
+  workflow_dispatch:     # Permite ejecutarlo manualmente
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repositorio
         uses: actions/checkout@v3
 
-      - name: Generate GitHub snake 🐍
+      - name: Generar snake.svg
         uses: Platane/snk@v3
         with:
           github_user_name: Michael383883
           outputs: |
             dist/github-contribution-grid-snake.svg
 
-      - name: Commit snake svg
-        uses: EndBug/add-and-commit@v9
+      - name: Subir al branch `output`
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          author_name: github-actions
-          author_email: github-actions@github.com
-          message: "Generate GitHub contribution snake"
-          add: "dist/github-contribution-grid-snake.svg"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
