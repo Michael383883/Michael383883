@@ -11,6 +11,10 @@
 ![snake gif](https://github.com/null3000/null3000/blob/output/github-contribution-grid-snake.svg)
 
 ## My Tech Stack and Tools
+## 🐍 Snake de contribuciones2,0
+
+![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg)
+
 
 ### Programming Languages
 
