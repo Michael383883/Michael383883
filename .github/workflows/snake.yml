@@ -1,4 +1,4 @@
-name: Snake Animation
+name: Generate Snake
 
 on:
   schedule:
@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Create dist directory
+        run: mkdir -p dist
 
       - name: Generate Snake
         uses: Platane/snk@master
@@ -23,7 +26,7 @@ jobs:
           color_background: "#000000"
           hide_progress_bar: true
 
-      - name: Deploy to Output Branch
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
