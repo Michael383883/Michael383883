@@ -25,6 +25,8 @@
 
 ![snake gif](https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg?v=3)
 
+##ser
+![Serpiente de contribuciones](https://raw.githubusercontent.com/tu-usuario/tu-repo/output/github-contribution-grid-snake.gif)
 
 
 ### Programming Languages
