@@ -29,6 +29,10 @@
 
 ![Snake animation](https://raw.githubusercontent.com/Michael383883/Michael383883/output/dist/snake.svg)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/dist/snake.svg" width="100%">
+</p>
+
 ### Programming Languages
 
 <p>
