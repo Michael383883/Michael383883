@@ -21,6 +21,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT }}
         run: python .github/snake/generate.py
+      - name: Generar actividad y trofeos
+        env:
+          GH_USER: Michael383883
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python .github/snake/extras.py
       - name: Publicar en la rama output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
