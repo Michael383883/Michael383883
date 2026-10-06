@@ -34,11 +34,11 @@
 
 ## 📈 Actividad del año
 
-<div align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=Michael383883&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribuciones" alt="activity graph" /></div>
+<div align="center"><img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/activity.svg" width="100%" alt="actividad" /></div>
 
 ## 🏆 Trofeos
 
-<div align="center"><img src="https://github-profile-trophy.vercel.app/?username=Michael383883&theme=onedark&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="trofeos" /></div>
+<div align="center"><img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/trophies.svg" width="100%" alt="trofeos" /></div>
 
 ## 🚀 Proyectos
 
