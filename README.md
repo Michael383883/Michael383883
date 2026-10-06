@@ -28,9 +28,9 @@
 
 </div>
 
-## 🐍 Contribution Snake
+## 🐍 Snake Pro
 
-<div align="center"><img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/github-contribution-grid-snake.svg" alt="snake" /></div>
+<div align="center"><img src="https://raw.githubusercontent.com/Michael383883/Michael383883/output/snake-pro.svg" alt="snake pro" width="100%" /></div>
 
 ## 📈 Actividad del año
 
